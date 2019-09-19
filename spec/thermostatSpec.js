@@ -29,10 +29,18 @@ describe('Thermostat', function() {
   });
 
   it('has a max temerature of 25 when power saving mode is on', function(){
-    thermostat.powerSavingMode("on");
+    thermostat.powerSaving("on");
     for (i = 0; i < 10; i++) {
       thermostat.up();
     }
     expect(thermostat.temperature).toEqual(25);
+  });
+
+  it('has a max temperature of 32 when power saving mode is off', function(){
+    thermostat.powerSaving("off");
+    for (i = 0; i < 15; i++) {
+      thermostat.up();
+    }
+    expect(thermostat.temperature).toEqual(32);
   });
 });

@@ -18,7 +18,11 @@ I want the minimum temperature on the thermostat to be 10 degrees
 So i don't freeze
 
 As a user
-I want the maximum temperature to be 25 when I turn power saving mode on 
+I want the maximum temperature to be 25 when I turn power saving mode on
 so that I can save money
+
+As a user
+I want the maximum temperature to be 32 when i don't have power saving mode on
+so that i don't get a heatstroke
 
 ```
