@@ -2,6 +2,7 @@ const MIN_TEMPERATURE = 10
 const MAX_TEMPERATURE = 32
 const POWER_SAVE_MAX = 25
 const DEFAULT_TEMPERATURE = 20
+const LOW_USAGE_MAX = 18
 
 function Thermostat(){
   this.temperature = DEFAULT_TEMPERATURE;
@@ -32,5 +33,6 @@ Thermostat.prototype.reset = function(){
 };
 
 Thermostat.prototype.usage = function(){
-  return 'low';
+  if (this.temperature <= LOW_USAGE_MAX){ return 'low' };
+  return 'medium'
 };

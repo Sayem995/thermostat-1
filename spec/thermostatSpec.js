@@ -63,4 +63,12 @@ describe('Thermostat', function() {
   it('has medium energy usage if temperature is < 25', function(){
     expect(thermostat.usage()).toEqual('medium');
   });
+
+  it('has high usage if 25 degrees or above', function(){
+    for (i = 0; i < 6; i++) {
+      thermostat.up();
+    };
+    expect(thermostat.usage()).toEqual('high');
+  });
+
 });
