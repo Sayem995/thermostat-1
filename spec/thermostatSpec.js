@@ -59,4 +59,8 @@ describe('Thermostat', function() {
     }
     expect(thermostat.usage()).toEqual('low');
   });
+
+  it('has medium energy usage if temperature is < 25', function(){
+    expect(thermostat.usage()).toEqual('medium');
+  });
 });
