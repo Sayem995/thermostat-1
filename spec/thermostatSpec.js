@@ -47,4 +47,9 @@ describe('Thermostat', function() {
   it('defaults to power saving mode', function(){
     expect(thermostat.powerSavingMode).toEqual('on');
   });
+
+  it('resets the temperature to 20 degrees using a reset button', function(){
+    thermostat.reset();
+    expect(thermostat.temperature).toEqual(20);
+  });
 });

@@ -3,7 +3,8 @@ const MAX_TEMPERATURE = 32
 const POWER_SAVE_MAX = 25
 
 function Thermostat(){
-  this.temperature = 20
+  this.temperature = 20;
+  this.powerSavingMode = 'on';
 };
 
 Thermostat.prototype.up = function(){
