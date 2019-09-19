@@ -13,4 +13,7 @@ As a user
 I want to decrease the temperature using the down function
 so that I can do yoga in the lounge
 
+As a User
+I want the minimum temperature on the thermostat to be 10 degrees
+So i don't freeze
 ```

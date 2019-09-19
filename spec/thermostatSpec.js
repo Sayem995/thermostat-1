@@ -17,6 +17,15 @@ describe('Thermostat', function() {
 
   it('can decrease temperature using down', function(){
     thermostat.down();
-    expect(thermpstat.temerature).toEqual(19);
+    expect(thermostat.temperature).toEqual(19);
+  });
+
+  it('has a minimum temperature of 10 degrees', function(){
+    var i;
+    for (i = 0; i < 20; i++) {
+      thermostat.down();
+      console.log(thermostat.temperature);
+    }
+    expect(thermostat.temperature).toEqual(10);
   });
 });
