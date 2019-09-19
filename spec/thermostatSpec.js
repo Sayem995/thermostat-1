@@ -65,9 +65,11 @@ describe('Thermostat', function() {
   });
 
   it('has high usage if 25 degrees or above', function(){
-    for (i = 0; i < 6; i++) {
+    thermostat.powerSaving('off');
+    for (i = 0; i < 7; i++) {
       thermostat.up();
     };
+    console.log(thermostat.temperature)
     expect(thermostat.usage()).toEqual('high');
   });
 
