@@ -33,4 +33,8 @@ As a User
 i want to reset the temperature to 20 degrees with a reset button
 so that i can reset the Thermostat
 
+As a user
+I want to see my current energy usage
+So that I can monitor my usage
+
 ```
