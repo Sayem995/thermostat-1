@@ -2,6 +2,7 @@
 
 describe('Thermostat', function() {
   var thermostat;
+  var i;
   beforeEach(function(){
     thermostat = new Thermostat();
   });
@@ -21,11 +22,17 @@ describe('Thermostat', function() {
   });
 
   it('has a minimum temperature of 10 degrees', function(){
-    var i;
     for (i = 0; i < 20; i++) {
       thermostat.down();
-      console.log(thermostat.temperature);
     }
     expect(thermostat.temperature).toEqual(10);
+  });
+
+  it('has a max temerature of 25 when power saving mode is on', function(){
+    thermostat.powerSavingMode("on");
+    for (i = 0; i < 10; i++) {
+      thermostat.up();
+    }
+    expect(thermostat.temperature).toEqual(25);
   });
 });

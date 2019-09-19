@@ -16,4 +16,9 @@ so that I can do yoga in the lounge
 As a User
 I want the minimum temperature on the thermostat to be 10 degrees
 So i don't freeze
+
+As a user
+I want the maximum temperature to be 25 when I turn power saving mode on 
+so that I can save money
+
 ```
