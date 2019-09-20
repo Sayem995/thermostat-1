@@ -26,11 +26,26 @@
   $(document).ready(function() {
     var thermostat = new Thermostat();
     $("#temperature").text(thermostat.temperature);
+    $("#current-usage").text(thermostat.usage());
 
     $("#temp-up").click(function(){
       thermostat.up();
       $("#temperature").text(thermostat.temperature);
+      $("#current-usage").text(thermostat.usage());
     });
+
+    $("#temp-down").click(function(){
+      thermostat.down();
+      $("#temperature").text(thermostat.temperature);
+      $("#current-usage").text(thermostat.usage());
+    });
+
+    $("#reset").click(function(){
+      thermostat.reset();
+      $("#temperature").text(thermostat.temperature);
+      $("#current-usage").text(thermostat.usage());
+    });
+
   });
 
   </script>
@@ -40,12 +55,12 @@
     <tr>
       <th><div id='temperature'>Temperature</div></th>
       <th><button id='temp-up'>Up</button></th>
-      <th><button id='down'>Down</button></th>
+      <th><button id='temp-down'>Down</button></th>
     </tr>
     <tr>
-      <td><div id='usage'>Energy Usage</div></td>
+      <td><div id='current-usage'>Energy Usage</div></td>
       <td></td>
-      <td><button type='button id='reset'>'Reset</button></td>
+      <td><button id='reset'>Reset</button></td>
     </tr>
   </table>
 </body>
