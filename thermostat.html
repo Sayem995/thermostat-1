@@ -1,0 +1,34 @@
+<html>
+<head>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      background-color: #ffdab9;
+      margin: auto;
+    }
+    button {
+      color: black
+    }
+    input {
+      font: 25px "Helvetica", "Arial", "sans-serif"
+    }
+  </style>
+</head>
+<body>
+  <script src="./src/thermostat.js"></script>
+  <h2 align='center'>Thermostat</h2>
+  <table>
+    <tr>
+      <th><div id='temperature'>Temperature</div></th>
+      <th><button type='button>' id='up'>Up</button></th>
+      <th><button type='button>' id='down'>Down</button></th>
+    </tr>
+    <tr>
+      <td><div id='usage'>Energy Usage</div></td>
+      <td></td>
+      <td><button type='button id='reset'>'Reset</button></td>
+    </tr>
+  </table>
+</body>
+</html>

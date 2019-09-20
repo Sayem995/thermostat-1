@@ -25,12 +25,12 @@ As a user
 I want the maximum temperature to be 32 when i don't have power saving mode on
 so that i don't get a heatstroke
 
-As a User
-i want power saving mode to be on by default
+As a user
+I want power saving mode to be on by default
 so that i can save the planet
 
 As a User
-i want to reset the temperature to 20 degrees with a reset button
+I want to reset the temperature to 20 degrees with a reset button
 so that i can reset the Thermostat
 
 As a user
