@@ -1,5 +1,6 @@
 <html>
 <head>
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
   <style>
     table, th, td {
       border: 1px solid black;
@@ -13,16 +14,33 @@
     input {
       font: 25px "Helvetica", "Arial", "sans-serif"
     }
+
   </style>
 </head>
 <body>
+
   <script src="./src/thermostat.js"></script>
+
+  <script>
+
+  $(document).ready(function() {
+    var thermostat = new Thermostat();
+    $("#temperature").text(thermostat.temperature);
+
+    $("#temp-up").click(function(){
+      thermostat.up();
+      $("#temperature").text(thermostat.temperature);
+    });
+  });
+
+  </script>
+
   <h2 align='center'>Thermostat</h2>
   <table>
     <tr>
       <th><div id='temperature'>Temperature</div></th>
-      <th><button type='button>' id='up'>Up</button></th>
-      <th><button type='button>' id='down'>Down</button></th>
+      <th><button id='temp-up'>Up</button></th>
+      <th><button id='down'>Down</button></th>
     </tr>
     <tr>
       <td><div id='usage'>Energy Usage</div></td>
