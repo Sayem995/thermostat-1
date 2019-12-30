@@ -1,5 +1,7 @@
 User Stories
 ============
+ Building the business logic to model a simple thermostat, and learning to hook it up to a dynamic visual interface using jQuery - all within the browser. Finally, used JavaScript to fetch data from external sources and display that on the page - again, all right from the page. Underpinning all this is a new testing framework to help test-drive my JavaScript code - Jasmine.
+
 ```
 As a user
 I want to have my thermostat default to 20 degrees
